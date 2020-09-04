@@ -31,8 +31,13 @@ public class WelcomeUI extends javax.swing.JFrame {
         copyrightName = new javax.swing.JLabel();
         applicationTitle = new javax.swing.JLabel();
         userAgeInfo = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setBounds(new java.awt.Rectangle(0, 0, 0, 0));
+        setPreferredSize(new java.awt.Dimension(750, 480));
+        setResizable(false);
+        setSize(new java.awt.Dimension(0, 0));
         getContentPane().setLayout(null);
 
         nextButton.setText("Next");
@@ -42,20 +47,24 @@ public class WelcomeUI extends javax.swing.JFrame {
             }
         });
         getContentPane().add(nextButton);
-        nextButton.setBounds(570, 380, 140, 60);
+        nextButton.setBounds(320, 380, 140, 60);
 
         copyrightName.setText("Copyright @prsm");
         getContentPane().add(copyrightName);
-        copyrightName.setBounds(30, 430, 240, 20);
+        copyrightName.setBounds(10, 420, 90, 20);
 
         applicationTitle.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         applicationTitle.setText("FUN WITH NUMBERS");
         getContentPane().add(applicationTitle);
-        applicationTitle.setBounds(250, 40, 240, 50);
+        applicationTitle.setBounds(270, 20, 240, 50);
 
         userAgeInfo.setText("For Age Group (8-12)");
         getContentPane().add(userAgeInfo);
-        userAgeInfo.setBounds(30, 370, 240, 50);
+        userAgeInfo.setBounds(10, 370, 110, 20);
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Page_1_Images.jpg"))); // NOI18N
+        getContentPane().add(jLabel2);
+        jLabel2.setBounds(0, 0, 750, 450);
 
         pack();
         setLocationRelativeTo(null);
@@ -103,6 +112,7 @@ public class WelcomeUI extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel applicationTitle;
     private javax.swing.JLabel copyrightName;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JButton nextButton;
     private javax.swing.JLabel userAgeInfo;
     // End of variables declaration//GEN-END:variables
