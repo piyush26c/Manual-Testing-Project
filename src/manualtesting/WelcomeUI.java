@@ -27,21 +27,43 @@ public class WelcomeUI extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        nextButton = new javax.swing.JButton();
+        copyrightName = new javax.swing.JLabel();
+        applicationTitle = new javax.swing.JLabel();
+        userAgeInfo = new javax.swing.JLabel();
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
-        );
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(null);
+
+        nextButton.setText("Next");
+        nextButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                nextButtonActionPerformed(evt);
+            }
+        });
+        getContentPane().add(nextButton);
+        nextButton.setBounds(570, 380, 140, 60);
+
+        copyrightName.setText("Copyright @prsm");
+        getContentPane().add(copyrightName);
+        copyrightName.setBounds(30, 430, 240, 20);
+
+        applicationTitle.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        applicationTitle.setText("FUN WITH NUMBERS");
+        getContentPane().add(applicationTitle);
+        applicationTitle.setBounds(250, 40, 240, 50);
+
+        userAgeInfo.setText("For Age Group (8-12)");
+        getContentPane().add(userAgeInfo);
+        userAgeInfo.setBounds(30, 370, 240, 50);
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void nextButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nextButtonActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_nextButtonActionPerformed
 
     /**
      * @param args the command line arguments
@@ -79,5 +101,9 @@ public class WelcomeUI extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel applicationTitle;
+    private javax.swing.JLabel copyrightName;
+    private javax.swing.JButton nextButton;
+    private javax.swing.JLabel userAgeInfo;
     // End of variables declaration//GEN-END:variables
 }
