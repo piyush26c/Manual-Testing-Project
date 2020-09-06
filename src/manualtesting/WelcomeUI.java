@@ -5,17 +5,37 @@
  */
 package manualtesting;
 
+import java.awt.Color;
+import javax.swing.JFrame;
+
 /**
  *
- * @author Piyush
+ * @authors Piyush Rajendra Chaudhari <piyushrc26@gmail.com>
+ * Rohit Balasaheb Bangar    <bangarrohit7057@gmail.com>
+ * Shalakha Vijaykumar Bang  <shalakhabang99@gmail.com>
+ * Mayuresh Rajesh Dindorkar <dmayuresh99@gmail.com>
+ *
+ * Project Name: FUN WITH NUMBERS Objective: Swing and AWT based Graphical User
+ * Interface Java Application intended for learning Manual Testing.*
+ *
+ * Date: 05 September 2020. Day: Saturday
  */
 public class WelcomeUI extends javax.swing.JFrame {
 
     /**
      * Creates new form WelcomeUI
      */
+//    public WelcomeUI() {
+//        initComponents();
+//
+//        Dimension dim = Toolkit.getDefaultToolkit().getScreenSize();
+//        this.setLocation(dim.width/2-this.getSize().width/2, dim.height/2-this.getSize().height/2);
+//    }
     public WelcomeUI() {
         initComponents();
+        this.setExtendedState(JFrame.MAXIMIZED_BOTH);
+        this.setResizable(true);
+        this.getContentPane().setBackground(Color.ORANGE);
     }
 
     /**
@@ -27,51 +47,72 @@ public class WelcomeUI extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        nextButton = new javax.swing.JButton();
         copyrightName = new javax.swing.JLabel();
+        jPanel1 = new javax.swing.JPanel();
+        jPanel2 = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
         applicationTitle = new javax.swing.JLabel();
-        userAgeInfo = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
+        nextButton = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Fun With Numbers");
+        setBackground(new java.awt.Color(0, 255, 153));
         setBounds(new java.awt.Rectangle(0, 0, 0, 0));
-        setPreferredSize(new java.awt.Dimension(750, 480));
-        setResizable(false);
         setSize(new java.awt.Dimension(0, 0));
         getContentPane().setLayout(null);
 
-        nextButton.setText("Next");
+        copyrightName.setBackground(new java.awt.Color(255, 255, 255));
+        copyrightName.setFont(new java.awt.Font("Comic Sans MS", 1, 18)); // NOI18N
+        copyrightName.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        copyrightName.setText("Copyright @prsm");
+        copyrightName.setOpaque(true);
+        getContentPane().add(copyrightName);
+        copyrightName.setBounds(10, 670, 160, 30);
+
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel1.setPreferredSize(new java.awt.Dimension(1122, 100));
+        getContentPane().add(jPanel1);
+        jPanel1.setBounds(0, 650, 1500, 160);
+
+        jPanel2.setBackground(new java.awt.Color(0, 0, 0));
+        jPanel2.setLayout(null);
+
+        jLabel1.setFont(new java.awt.Font("Harlow Solid Italic", 2, 24)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 0));
+        jLabel1.setText("Welcome !! Hearty Congragulations for selecting the right place for getting equipped with basic arithmetics, conversions and mensuration. ");
+        jPanel2.add(jLabel1);
+        jLabel1.setBounds(40, 300, 1290, 40);
+
+        applicationTitle.setFont(new java.awt.Font("Comic Sans MS", 1, 48)); // NOI18N
+        applicationTitle.setForeground(new java.awt.Color(255, 255, 255));
+        applicationTitle.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        applicationTitle.setText("FUN WITH NUMBERS");
+        jPanel2.add(applicationTitle);
+        applicationTitle.setBounds(420, 130, 550, 70);
+
+        nextButton.setFont(new java.awt.Font("Comic Sans MS", 1, 18)); // NOI18N
+        nextButton.setText("Start");
         nextButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 nextButtonActionPerformed(evt);
             }
         });
-        getContentPane().add(nextButton);
-        nextButton.setBounds(320, 380, 140, 60);
+        jPanel2.add(nextButton);
+        nextButton.setBounds(580, 440, 190, 50);
 
-        copyrightName.setText("Copyright @prsm");
-        getContentPane().add(copyrightName);
-        copyrightName.setBounds(10, 420, 90, 20);
-
-        applicationTitle.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        applicationTitle.setText("FUN WITH NUMBERS");
-        getContentPane().add(applicationTitle);
-        applicationTitle.setBounds(270, 20, 240, 50);
-
-        userAgeInfo.setText("For Age Group (8-12)");
-        getContentPane().add(userAgeInfo);
-        userAgeInfo.setBounds(10, 370, 110, 20);
-
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Page_1_Images.jpg"))); // NOI18N
-        getContentPane().add(jLabel2);
-        jLabel2.setBounds(0, 0, 750, 450);
+        getContentPane().add(jPanel2);
+        jPanel2.setBounds(0, -30, 1500, 730);
 
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
+
     private void nextButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nextButtonActionPerformed
         // TODO add your handling code here:
+        First_frame ff = new First_frame();
+        ff.setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_nextButtonActionPerformed
 
     /**
@@ -81,7 +122,7 @@ public class WelcomeUI extends javax.swing.JFrame {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html
          */
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
@@ -105,6 +146,7 @@ public class WelcomeUI extends javax.swing.JFrame {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new WelcomeUI().setVisible(true);
+
             }
         });
     }
@@ -112,8 +154,9 @@ public class WelcomeUI extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel applicationTitle;
     private javax.swing.JLabel copyrightName;
-    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
     private javax.swing.JButton nextButton;
-    private javax.swing.JLabel userAgeInfo;
     // End of variables declaration//GEN-END:variables
 }

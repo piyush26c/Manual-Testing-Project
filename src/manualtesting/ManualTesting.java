@@ -7,18 +7,22 @@ package manualtesting;
 
 /**
  *
- * @author Piyush
+ * @authors Piyush Rajendra Chaudhari <piyushrc26@gmail.com>
+ * Rohit Balasaheb Bangar    <bangarrohit7057@gmail.com>
+ * Shalakha Vijaykumar Bang  <shalakhabang99@gmail.com>
+ * Mayuresh Rajesh Dindorkar <dmayuresh99@gmail.com>
+ *
+ * Project Name: FUN WITH NUMBERS Objective: Swing and AWT based Graphical User
+ * Interface Java Application intended for learning Manual Testing.*
+ *
+ * Date: 05 September 2020. Day: Saturday
  */
 public class ManualTesting {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
-        System.out.println("Hello World");
-        System.out.println("Hello Guyiesss..........");
-        
+        //launching the project
+        WelcomeUI obj = new WelcomeUI();
+        obj.setVisible(true);
     }
-    
+
 }

@@ -4,9 +4,21 @@
  * and open the template in the editor.
  */
 package manualtesting;
+
+import java.awt.Color;
+import javax.swing.JFrame;
+
 /**
  *
- * @author Satyam
+ * @authors Piyush Rajendra Chaudhari <piyushrc26@gmail.com>
+ * Rohit Balasaheb Bangar    <bangarrohit7057@gmail.com>
+ * Shalakha Vijaykumar Bang  <shalakhabang99@gmail.com>
+ * Mayuresh Rajesh Dindorkar <dmayuresh99@gmail.com>
+ *
+ * Project Name: FUN WITH NUMBERS Objective: Swing and AWT based Graphical User
+ * Interface Java Application intended for learning Manual Testing.*
+ *
+ * Date: 05 September 2020. Day: Saturday
  */
 public class First_frame extends javax.swing.JFrame {
 
@@ -15,6 +27,10 @@ public class First_frame extends javax.swing.JFrame {
      */
     public First_frame() {
         initComponents();
+        this.setExtendedState(JFrame.MAXIMIZED_BOTH);
+        this.setResizable(true);
+        Color c = new Color(229, 209, 255);
+        this.getContentPane().setBackground(c);
     }
 
     /**
@@ -26,93 +42,100 @@ public class First_frame extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        giant_calculator = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         button_conversion = new javax.swing.JButton();
         button_mensuration = new javax.swing.JButton();
         button_arithmetic = new javax.swing.JButton();
+        backbtn = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Fun With Numbers");
+        getContentPane().setLayout(null);
 
-        giant_calculator.setPreferredSize(new java.awt.Dimension(750, 450));
-        giant_calculator.setLayout(null);
-
-        jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 36)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Comic Sans MS", 1, 36)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(102, 0, 51));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("GIANT CALCULATOR");
-        giant_calculator.add(jLabel1);
-        jLabel1.setBounds(199, 11, 417, 52);
+        jLabel1.setText("OPERATIONS");
+        getContentPane().add(jLabel1);
+        jLabel1.setBounds(580, 80, 250, 52);
 
-        button_conversion.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
-        button_conversion.setForeground(new java.awt.Color(204, 102, 0));
+        button_conversion.setFont(new java.awt.Font("Comic Sans MS", 1, 18)); // NOI18N
         button_conversion.setText("CONVERSIONS");
+        button_conversion.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(153, 0, 0)));
         button_conversion.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 button_conversionActionPerformed(evt);
             }
         });
-        giant_calculator.add(button_conversion);
-        button_conversion.setBounds(302, 251, 180, 76);
+        getContentPane().add(button_conversion);
+        button_conversion.setBounds(590, 260, 220, 76);
 
-        button_mensuration.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
-        button_mensuration.setForeground(new java.awt.Color(255, 102, 0));
+        button_mensuration.setFont(new java.awt.Font("Comic Sans MS", 1, 18)); // NOI18N
         button_mensuration.setText("MENSURATION");
+        button_mensuration.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(153, 0, 0)));
         button_mensuration.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 button_mensurationActionPerformed(evt);
             }
         });
-        giant_calculator.add(button_mensuration);
-        button_mensuration.setBounds(508, 121, 180, 76);
+        getContentPane().add(button_mensuration);
+        button_mensuration.setBounds(970, 260, 220, 76);
 
-        button_arithmetic.setBackground(new java.awt.Color(102, 255, 153));
-        button_arithmetic.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
-        button_arithmetic.setForeground(new java.awt.Color(255, 102, 0));
+        button_arithmetic.setFont(new java.awt.Font("Comic Sans MS", 1, 18)); // NOI18N
         button_arithmetic.setText("BASIC ARITHMETIC");
+        button_arithmetic.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(153, 0, 0)));
+        button_arithmetic.setFocusPainted(false);
+        button_arithmetic.setOpaque(false);
         button_arithmetic.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 button_arithmeticActionPerformed(evt);
             }
         });
-        giant_calculator.add(button_arithmetic);
-        button_arithmetic.setBounds(100, 120, 180, 76);
+        getContentPane().add(button_arithmetic);
+        button_arithmetic.setBounds(220, 260, 220, 76);
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addComponent(giant_calculator, javax.swing.GroupLayout.DEFAULT_SIZE, 743, Short.MAX_VALUE)
-                .addContainerGap())
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(giant_calculator, javax.swing.GroupLayout.DEFAULT_SIZE, 451, Short.MAX_VALUE)
-                .addContainerGap())
-        );
+        backbtn.setFont(new java.awt.Font("Comic Sans MS", 1, 18)); // NOI18N
+        backbtn.setText("BACK");
+        backbtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                backbtnActionPerformed(evt);
+            }
+        });
+        getContentPane().add(backbtn);
+        backbtn.setBounds(40, 640, 150, 30);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void button_arithmeticActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button_arithmeticActionPerformed
         // TODO add your handling code here:
-        Basic_Arithmetic b=new Basic_Arithmetic();
+        Basic_Arithmetic b = new Basic_Arithmetic();
         b.setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_button_arithmeticActionPerformed
 
     private void button_mensurationActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button_mensurationActionPerformed
         // TODO add your handling code here:
-        Mensuration m=new Mensuration();
+        Mensuration m = new Mensuration();
         m.setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_button_mensurationActionPerformed
 
     private void button_conversionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button_conversionActionPerformed
         // TODO add your handling code here:
-        Conversion c=new Conversion();
+        Conversion c = new Conversion();
         c.setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_button_conversionActionPerformed
+
+
+    private void backbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backbtnActionPerformed
+        // TODO add your handling code here:
+        WelcomeUI w = new WelcomeUI();
+        w.setVisible(true);
+        this.dispose();
+        //close();
+    }//GEN-LAST:event_backbtnActionPerformed
 
     /**
      * @param args the command line arguments
@@ -121,7 +144,7 @@ public class First_frame extends javax.swing.JFrame {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html
          */
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
@@ -150,10 +173,10 @@ public class First_frame extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton backbtn;
     private javax.swing.JButton button_arithmetic;
     private javax.swing.JButton button_conversion;
     private javax.swing.JButton button_mensuration;
-    private javax.swing.JPanel giant_calculator;
     private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
 }
