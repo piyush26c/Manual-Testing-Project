@@ -181,7 +181,7 @@ public class Basic_Arithmetic extends javax.swing.JFrame {
         // only got here if we didn't return false
         return true;
     }
-
+    
     public String acceptInput(JTextField field) {
         String ip = field.getText().replaceAll("\\s", "");
         return ip;
@@ -192,7 +192,6 @@ public class Basic_Arithmetic extends javax.swing.JFrame {
         String output = String.format("%.3f", resultval);
         return output;
     }
-
 
     private void button_addActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button_addActionPerformed
         // TODO add your handling code here:
@@ -219,8 +218,6 @@ public class Basic_Arithmetic extends javax.swing.JFrame {
         } else {
             JOptionPane.showMessageDialog(null, "Enter valid input!", "Warning!", JOptionPane.INFORMATION_MESSAGE);
         }
-
-
     }//GEN-LAST:event_button_subActionPerformed
 
     private void button_mulActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button_mulActionPerformed

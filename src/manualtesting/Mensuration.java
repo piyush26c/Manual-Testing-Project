@@ -152,7 +152,6 @@ public class Mensuration extends javax.swing.JFrame {
         Circle_Frame cf = new Circle_Frame();
         cf.setVisible(true);
         dispose();
-
     }//GEN-LAST:event_button_circleActionPerformed
 
     private void button_squareActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button_squareActionPerformed
@@ -160,8 +159,6 @@ public class Mensuration extends javax.swing.JFrame {
         Square_Frame sf = new Square_Frame();
         sf.setVisible(true);
         dispose();
-
-
     }//GEN-LAST:event_button_squareActionPerformed
 
     private void button_triangleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button_triangleActionPerformed
@@ -169,7 +166,6 @@ public class Mensuration extends javax.swing.JFrame {
         Triangle_Frame tf = new Triangle_Frame();
         tf.setVisible(true);
         dispose();
-
     }//GEN-LAST:event_button_triangleActionPerformed
 
     private void backbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backbtnActionPerformed
@@ -184,7 +180,6 @@ public class Mensuration extends javax.swing.JFrame {
         Rectangle_Frame rf = new Rectangle_Frame();
         rf.setVisible(true);
         dispose();
-
     }//GEN-LAST:event_button_rectangleActionPerformed
 
     /**

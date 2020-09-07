@@ -305,7 +305,6 @@ public class Conversion extends javax.swing.JFrame {
                         }
 
                         case "Kelvin": {
-
                             double output = Double.parseDouble(input_temp_val) + 273.15;
                             String output_str = String.format("%.3f", output);
                             result_temp.setText(output_str);

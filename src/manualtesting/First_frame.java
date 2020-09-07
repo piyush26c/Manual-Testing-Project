@@ -129,13 +129,11 @@ public class First_frame extends javax.swing.JFrame {
         this.dispose();
     }//GEN-LAST:event_button_conversionActionPerformed
 
-
     private void backbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backbtnActionPerformed
         // TODO add your handling code here:
         WelcomeUI w = new WelcomeUI();
         w.setVisible(true);
         this.dispose();
-        //close();
     }//GEN-LAST:event_backbtnActionPerformed
 
     /**
